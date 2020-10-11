@@ -7,19 +7,45 @@
     </head>
 
     <body>
-        <button onclick="document.location='bios.html'" id="button1">Actor Bios</button>
-        <button onclick="document.location='plot.html'" id="button2">Crew Bios</button>
-        <img src= "springPoster.jpg" height="600" width="400">
-        <button onclick="document.location='blog.html'"  id="button3">Blog</button>
-        <button onclick="document.location='showtix4u.com'" id="button4">Plot</button>
+        <a href="bios.html" class="button1">Actor Bios</a>
+        <a href="crewbios.html" class="button1">Crew Bios</a>
+        <img src= "springPoster.jpg" class= "poster" height="600" width="400">
+        <a href="plot.html" class="button1">Plot</a>
+        <a href="blog.html" class="button1">Blog</a>
     </body>
 </html>
 
 <style>
 body{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
+    background-image: url("flowerBack.jpg");
+    background-size: cover;
+}
+
+.poster{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+a.button1{
+display: inline-block;
+padding:0.35em 1.2em;
+border:0.1em solid #FFFFFF;
+margin:0 0.3em 0.3em 0;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#FFFFFF;
+text-align:center;
+transition: all 0.2s;
+
+}
+a.button1:hover{
+color:#000000;
+background-color:#FFFFFF;
 }
 
 
